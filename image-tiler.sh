@@ -75,7 +75,7 @@ do
 
     # If odd column vertical shift has been used, convert the relative shift to an absolute number of pixels
     if [ -n "${odd_col_vertical_shift}" ]; then
-        absolute_shift=`convert $input_file -format "%[fx:round(h*${odd_col_vertical_shift})]" info:`
+        absolute_shift=`convert $input_file $cmd_part_resize -format "%[fx:round(h*${odd_col_vertical_shift})]" info:`
     fi
 
     # Actually tile the image
