@@ -7,7 +7,8 @@ This script depends on ImageMagick, so make sure that's installed.
 
 `./image-tiler.sh -w <width> -h <height> -f <jpg|png|pdf|...> [-r <resize>] [-s <0-1>] <files...>`
 
-Each file will be tiled on its own, with each file's output being written to `<filename>-tiled.<format>`. Multiple files are not be combined by this script.
+Each file will be tiled on its own, with each file's output being written to `<filename>-tiled.<format>`.
+Note that this script cannot combine different files into a single tiled image.
 
 Required:
 * `-w <width>` — Output image width in pixels.
